@@ -20,6 +20,7 @@ namespace Project
 		protected override void mapBindings()
 		{
 			// Injector, mediator and command bindings go here
+			mediationBinder.Bind<ProjectView>().To<ProjectMediator>();
 		}
 	}
 }
